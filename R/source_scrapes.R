@@ -24,7 +24,7 @@ scrape_cbs = function(pos = c("QB", "RB", "WR", "TE", "K", "DST"), season = NULL
 
   l_pos = lapply(pos, function(pos) {
     scrape_link = paste0("https://www.cbssports.com/fantasy/football/stats/", pos, "/",
-                         season, "/", scrape_week, "/projections/nonppr/")
+                         season, "/", scrape_week, "/projections/ppr/")
 
     Sys.sleep(2L) # temporary, until I get an argument for honoring the crawl delay
     cat(paste0("Scraping ", pos, " projections from"), scrape_link, sep = "\n  ")
