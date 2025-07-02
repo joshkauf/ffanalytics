@@ -14,7 +14,7 @@ scoring <- list(
     rush_100_yds = 0, rush_150_yds = 0, rush_200_yds = 0),
   rec = list(
     all_pos = TRUE,
-    rec = 0, rec_yds = 0.1, rec_tds = 6, rec_40_yds = 0, rec_100_yds = 0,
+    rec = 1, rec_yds = 0.1, rec_tds = 6, rec_40_yds = 0, rec_100_yds = 0,
     rec_150_yds = 0, rec_200_yds = 0
   ),
   misc = list(
