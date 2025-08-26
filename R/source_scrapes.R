@@ -846,11 +846,11 @@ scrape_fftoday <- function(pos = c("QB", "RB", "WR", "TE", "K", "DST", "DL", "LB
 
       if(week == 0) {
         page_link = paste0("https://www.fftoday.com/rankings/playerproj.php?Season=",
-                           season, "&PosID=", position, "&LeagueID=1",
+                           season, "&PosID=", position, "&LeagueID=107644",
                            "&order_by=FFPts&sort_order=DESC&cur_page=", cur_page)
       } else {
         page_link = paste0("https://www.fftoday.com/rankings/playerwkproj.php?Season=", season,
-                           "&GameWeek=", week, "&PosID=", position, "&LeagueID=1",
+                           "&GameWeek=", week, "&PosID=", position, "&LeagueID=107644",
                            "&order_by=FFPts&sort_order=DESC&cur_page=", cur_page)
       }
 
