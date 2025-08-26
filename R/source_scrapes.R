@@ -262,7 +262,7 @@ scrape_fantasysharks <- function(pos = c("QB", "RB", "WR", "TE", "K", "DST", "DL
       pos %in% "DB" ~ 10
     )
     scrape_link <- paste0("https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=",
-                          "&League=-1&Position=",position, "&scoring=1&Segment=", segment, "&uid=4")
+                          "&League=-1&Position=",position, "&scoring=2&Segment=", segment, "&uid=4")
 
     Sys.sleep(2L) # temporary, until I get an argument for honoring the crawl delay
     cat(paste0("Scraping ", pos, " projections from"), scrape_link, sep = "\n  ")
@@ -823,10 +823,10 @@ scrape_fftoday <- function(pos = c("QB", "RB", "WR", "TE", "K", "DST", "DL", "LB
 
     if(week == 0) {
       scrape_link = paste0("https://www.fftoday.com/rankings/playerproj.php?PosID=", position,
-                           "&LeagueID=1")
+                           "&LeagueID=107644")
     } else {
       scrape_link = paste0("https://www.fftoday.com/rankings/playerwkproj.php?Season=", season,
-                           "&GameWeek=", week, "&PosID=", position, "&LeagueID=1")
+                           "&GameWeek=", week, "&PosID=", position, "&LeagueID=107644")
     }
 
     cat(paste0("Scraping ", pos, " projections from"), scrape_link, sep = "\n ")
