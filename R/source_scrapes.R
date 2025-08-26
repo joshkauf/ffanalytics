@@ -959,7 +959,7 @@ scrape_fantasypros = function(pos = c("QB", "RB", "WR", "TE", "K", "DST"),
   if(week > 0) {
     scrape_week = paste0(".php?week=", week)
   } else {
-    scrape_week = ".php?week=draft"
+    scrape_week = ".php?week=draft&scoring=PPR"
   }
 
   base_link = paste0("https://www.fantasypros.com/nfl/projections")
