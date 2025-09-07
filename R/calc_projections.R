@@ -166,7 +166,7 @@ prep_src_weights = function(src_weights = NULL) {
 #' This is the default baseline that is used if not otherwise specified when
 #' calculating VOR:
 #' \code{c(QB = 13, RB = 35, WR = 36, TE = 13, K = 8, DST = 3, DL = 10, LB = 10, DB = 10)}
-default_baseline <- c(QB = 16, RB = 52.64, WR = 60.48, TE = 19, K = 12, DST = 12, DL = 10, LB = 10, DB = 10)
+default_baseline <- c(QB = 23, RB = 30, WR = 65, TE = 22, K = 12, DST = 12, DL = 10, LB = 10, DB = 10)
 
 
 
